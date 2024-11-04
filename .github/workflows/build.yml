@@ -24,11 +24,10 @@ jobs:
       - name: Check out
         uses: actions/checkout@v4
         with:
+          repository: "KitsuneMagisk/Magisk"
+          ref: "kitsune"
           submodules: "recursive"
           fetch-depth: 0
-
-      - name: Setup environment
-        uses: ./.github/actions/setup
 
       - name: Set up JDK 21
         uses: actions/setup-java@main
